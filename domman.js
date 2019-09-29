@@ -8,8 +8,7 @@ body.appendChild(container);
 
 // Create a 2D array of 16 div nodes
 var grid = []
-var i;
-var j;
+var i, j;
 for (i = 0; i < 30; i++) {
     grid[i] = []
     const row = document.createElement('div');
@@ -25,14 +24,13 @@ for (i = 0; i < 30; i++) {
         curr.style.height = '20px';
         curr.style.backgroundColor = 'white';
 
-        row.appendChild(curr);
-
-        function setColor() {
-            this.style.backgroundColor === 'white' ?
-                this.style.backgroundColor = 'black' :
-                this.style.backgroundColor = 'white';
-        }
+        row.appendChild(curr); 
         curr.onmouseover = setColor;
-        console.log(curr);
     }
+}
+
+function setColor() {
+    this.style.backgroundColor === 'white' ?
+        this.style.backgroundColor = 'black' :
+        this.style.backgroundColor = 'white';
 }
