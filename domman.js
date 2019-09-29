@@ -1,6 +1,7 @@
+// get the body of the DOM tree and create an element to hold our grid
 const body = document.querySelector('body');
 const container = document.createElement('div');
-container.style.top = '15px';
+container.style.top = '15px';       // to center the grid on the webpage
 container.style.left = '320px';
 container.style.position = 'absolute';
 container.style.visibility = 'show';
@@ -29,6 +30,10 @@ for (i = 0; i < 30; i++) {
     }
 }
 
+/** 
+ * A function to be used with hover on each cell of the grid.
+ * The color of a cell reverses when hovered on due to this function.
+*/
 function setColor() {
     this.style.backgroundColor === 'white' ?
         this.style.backgroundColor = 'black' :
