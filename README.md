@@ -16,4 +16,4 @@ to build and alter the DOM tree and also creating interactive components to webp
 
 https://robinsal.github.io/etchasketch.html
 
-* Note: I can only guarantee this renders properly on a desktop running Firefox.
+** Note: I can only guarantee this renders properly on a desktop running Firefox 69.0.1
